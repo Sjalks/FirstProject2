@@ -1,3 +1,3 @@
-# FirstProject2
+# FirstProject
 
 Welcome to our first project!
