@@ -1,16 +1,7 @@
-# CMake
-/build*/
-CMakeCache.txt
-CMakeFiles/
+vcpkg/
+build*/
 vcpkg_installed/
-
-# VS Code
-.vscode/*.log
-.vscode/ipch
-.vscode/.cmaketools.json
-
-# macOS / Windows
+CMakeFiles/
+CMakeCache.txt
 .DS_Store
 Thumbs.db
-vcpkg/
-vcpkg/
