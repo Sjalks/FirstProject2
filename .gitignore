@@ -1,0 +1,15 @@
+# CMake
+/build*/
+CMakeCache.txt
+CMakeFiles/
+vcpkg_installed/
+
+# VS Code
+.vscode/*.log
+.vscode/ipch
+.vscode/.cmaketools.json
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+vcpkg/

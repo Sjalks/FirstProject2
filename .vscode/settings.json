@@ -1,7 +1,6 @@
 {
-    "tdt4102.isProjectFolder": true,
-    "cmake.configureOnOpen": false,
-    "cmake.autoSelectActiveFolder": false,
-    "cmake.configureOnEdit": false,
-    "makefile.alwaysPreConfigure": false
-}
+    "cmake.useCMakePresets": "always",
+    "cmake.configureOnOpen": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+  }
+  

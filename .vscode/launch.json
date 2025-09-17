@@ -1,14 +1,26 @@
 {
+    "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Build and Run Debug",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/builddir/program",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "Build Executable",
-            "internalConsoleOptions": "neverOpen",
+        
+      {
+        "name": "Run / Debug (CMake target)",
+        "type": "cppdbg",
+        "request": "launch",
+  
+        // Run the selected CMake target (works for Debug/Release, Mac/Win)
+        "program": "${command:cmake.launchTargetPath}",
+        "cwd": "${workspaceFolder}",
+        "args": [],
+        "stopAtEntry": false,
+  
+        // macOS defaults (C++ extension uses LLDB here)
+        "MIMode": "lldb",
+  
+        // Windows overrides: use MSVC debugger
+        "windows": {
+          "type": "cppvsdbg"
         }
+      }
     ]
-}
+  }
+  
