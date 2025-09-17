@@ -13,3 +13,4 @@ vcpkg_installed/
 .DS_Store
 Thumbs.db
 vcpkg/
+vcpkg/
