@@ -1,26 +1,14 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        
-      {
-        "name": "Run / Debug (CMake target)",
-        "type": "cppdbg",
-        "request": "launch",
-  
-        // Run the selected CMake target (works for Debug/Release, Mac/Win)
-        "program": "${command:cmake.launchTargetPath}",
-        "cwd": "${workspaceFolder}",
-        "args": [],
-        "stopAtEntry": false,
-  
-        // macOS defaults (C++ extension uses LLDB here)
-        "MIMode": "lldb",
-  
-        // Windows overrides: use MSVC debugger
-        "windows": {
-          "type": "cppvsdbg"
-        }
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run / Debug (CMake target)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb",
+      "windows": { "type": "cppvsdbg" }
+    }
+  ]
+}

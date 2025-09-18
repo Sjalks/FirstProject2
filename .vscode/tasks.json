@@ -2,12 +2,19 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "cmake: build (preset)",
+			"type": "shell",
+			"command": "cmake --build --preset build",
+			"problemMatcher": "$gcc"
+		},
+		{
 			"type": "cmake",
-			"label": "CMake: configure",
-			"command": "configure",
-			"preset": "${command:cmake.activeConfigurePresetName}",
+			"label": "CMake: test",
+			"command": "test",
+			"preset": "${command:cmake.activeTestPresetName}",
 			"problemMatcher": [],
-			"detail": "CMake template configure task"
+			"detail": "CMake template test task"
 		}
 	]
-}
+  }
+  
